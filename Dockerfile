@@ -16,6 +16,4 @@ RUN mkdir -p /usr/local/src \
 RUN easy_install pip
 WORKDIR /usr/local/src/xblock-sdk-0.1.2
 RUN make install
-EXPOSE 8000
 ENTRYPOINT ["python", "manage.py"]
-
